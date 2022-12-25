@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+
+<title>小米官網</title>
+<link rel="icon" href="https://www.flaticon.com/free-icon/xiaomi_882720?term=xiaomi&page=1&position=1&origin=tag&related_id=882720">
+
+<meta charset="utf-8">
+
+<style>
+    
+    *{
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    body{
+        background-color: white;
+    }
+    .header{
+        display: flex;
+        background-color: #212121;
+        border-left: #212121 solid 100px;
+        color: gray;
+        }
+
+    .header a:hover{
+        color: #f5f5f5;
+        font:bold;
+    }
+
+    .header_left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-style: "微軟正黑體";
+
+        /* flex-direction: column; */
+        }
+
+    .header_left>a{
+        margin: 10px;
+        color: #b0b0b0;
+        }
+
+    .header_right{
+        margin-left: auto;
+        margin-top: 10px;
+        font-size: 12px;
+        font-style: "微軟正黑體";
+        }
+
+    .header_right>a{
+        margin: 10px;
+        color: #b0b0b0;
+        }
+
+    .search{
+        position: relative;
+        width: 20px;
+        margin-left: 100px;
+    }
+    .search-bar{
+        height: 32.5px;
+        border: 1px solid #424242;
+        background-color: white;
+        margin-left: 150px;
+    }
+    #search-btn{
+        position: relative;
+        top: 33px;
+        width: 36px;
+        height: 35px;
+        background-color: white;
+        color: #f5f5f5;
+        border: 1px solid #424242;
+        margin-left: 295px;
+    }
+
+    #menu1{
+        display: flex;
+        background-color: white;
+        border-left: white solid 100px;
+        height: 100px;
+        font-size: 18px;
+        text-align:center;
+        line-height: 100px;
+    }
+
+    #menu1 a:hover{
+        color: orange;
+        font:bold;
+    }
+
+    #menu1_left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-style: "微軟正黑體";
+        }
+
+    #menu1_left>a{
+        margin: 10px;
+        font-size: 18px;
+        font-style: "微軟正黑體";
+        text-align:right;
+        line-height: 100px;
+        }
+    
+    #menu{
+        position: relative;
+        background-color: #212121;
+        left: 100px;
+        width: 180px;
+        height: 300px;
+        flex-direction: column;
+        border-top: #212121 solid 20px;
+        line-height: 30px;
+    }
+    
+    #menu ul{
+        list-style-type: none;
+        font-size: 16px;
+        width: 200px;
+    }
+    #menu ul a{
+        display: block;
+        text-align:left;
+        color: white;
+    }
+    #menu ul a:hover{
+        background-color: #ff6700;
+        width: 125px;
+    }
+    
+    table {
+        width: 100%;
+        background-color: #212121;
+        border: #212121 solid 50px;
+        font-size: 14px;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        color: #b0b0b0;
+        font-size: 14px;
+    }
+
+    td:hover {color: white;}
+
+    #bo{
+        background-color: #212121;
+        border-top: #b0b0b0 solid 1px;
+        color: #b0b0b0;
+        font-size: 10px;
+        border-left: #212121 solid 100px;
+    }
+
+    div.gallery {
+        margin: 5px;
+        float: left;
+    }
+
+    div.gallery:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+   
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        font-size: 12px;
+        background-color: white;
+    }
+    div.desc1 {
+        text-align: center;
+        font-size: 12px;
+        color: orange;
+    }
+    #aa{
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    #bb{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-left: white solid 96px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    #cc{
+        background-color: #f5f5f5;
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-left: #f5f5f5 solid 96px;
+        border-top: #f5f5f5 solid 10px;
+        position: relative;
+    }
+    #dd{
+        background-color: #f5f5f5;
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-left: #f5f5f5 solid 96px;
+        position: relative;
+    }
+    #ee{
+        background-color: #f5f5f5;
+        display: flex;
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_left">
+            <a href="https://global.miui.com/en" target="_blank">MIUL</a>
+            ｜
+            <a href="https://www.mi.com/tw/appdownload/" target="_blank">下載小米商城 APP</a>
+            ｜
+            <a href="https://buy.mi.com/tw/user/points-center" target="_blank">小米積分中心</a>
+            ｜
+            <a href="https://event.mi.com/tw/imeilogin" target="_blank">登錄送活動</a>
+            ｜
+            <a href="https://event.mi.com/tw/business" target="_blank">小米團購</a>
+        </div>
+        
+        <div class="header_right">
+            <a href="https://account.xiaomi.com/fe/service/login/password?_locale=zh_TW" target="_blank">登入</a>
+            ｜
+            <a href="https://account.xiaomi.com/fe/service/login/password?_locale=zh_TW" target="_blank">註冊</a>
+            ｜
+            <a href="https://buy.mi.com/tw/cart"target="_blank">購物車</a>
+        </div>
+    </div>
+
+    
+    <div id="menu1">
+        <div><a href="https://global.miui.com/en" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/768px-Xiaomi_logo_%282021-%29.svg.png" 
+            height="50PX" style=" margin: 25px 20px;" width="50px" left="10px">
+        </a>
+        </div>
+        <div id="menu1_left">
+            <a href="https://www.mi.com/tw/appdownload/" target="_blank">Xiaomi手機</a>
+            <a href="https://buy.mi.com/tw/user/points-center" target="_blank">Redmi手機</a>
+            <a href="https://event.mi.com/tw/imeilogin" target="_blank">智慧科技</a>
+            <a href="https://event.mi.com/tw/business" target="_blank">配件</a>
+            <a href="https://event.mi.com/tw/business" target="_blank">服務</a>
+        </div>
+          
+        <div class="search">
+            <input class="search-bar" type="text" name="search" id="search" placeholder="  搜尋商品">
+        </div>
+
+        <div id="search-btn"></div>
+    </div>
+    
+    <div id="aa">
+        <div id="menu">
+            <ul><a>手機</a></ul>
+            <ul><a>視聽娛樂</a></ul>
+            <ul><a>智慧家電</a></ul>
+            <ul><a>智慧科技</a></ul>
+            <ul><a>電源3C配件</a></ul>
+            <ul><a>耳機音箱</a></ul>
+            <ul><a>健康護理</a></ul>
+            <ul><a>生活周邊</a></ul>
+            <ul><a>全部配件分類</a></ul>
+        </div>
+        <div style="margin-left: 100px;">
+            <img src="https://i01.appmifile.com/webfile/globalweb/picture/poco40-pc.jpg?width=1226&height=460" width="853px">
+        </div>
+    </div>
+   
+    <div id="bb">
+        <div class="gallery">
+            <a target="_blank" href="https://www.mi.com/tw/product/redmi-10c/">
+            <img src="https://i01.appmifile.com/webfile/globalimg/summer/20220811-170355.png?width=296&height=170" width="253px">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.mi.com/tw/product/redmi-note-11s/">
+            <img src="https://i01.appmifile.com/webfile/globalweb/picture/20221009-175620.jpg?width=296&height=170" width="253px">
+            </a>
+        </div>
+        <div class="gallery" style="display: block;">
+            <a target="_blank" href="https://event.mi.com/tw/business">
+            <img src="https://i01.appmifile.com/webfile/globalimg/summer/20220811-170352.png?width=296&height=170" width="253px">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.po.co/tw/">
+            <img src="https://i01.appmifile.com/webfile/globalimg/summer/20220811-173533.png?width=296&height=170" width="253px">
+            </a>
+        </div>
+    </div>
+    <div id="bb">
+        <div class="gallery">
+            <a target="_blank" href="https://event.mi.com/tw/huiyuanquanyi">
+            <img src="https://i01.appmifile.com/webfile/globalimg/yanganna/member-s-p.png" width="1040px">
+            </a>
+        </div>
+    </div>
+    
+    <div id="bb">
+        <div><h2>明星單品</h2></div>
+    </div>
+
+    <div id="bb">
+        <div class="gallery" style="background-color: #f5f5f5; border-top: red solid 1px;">
+            <a target="_blank" href="img_5terre.jpg">
+            <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1633675764.75855247.png?width=160&height=160" width="200px">
+            </a>
+            <div class="desc" style="background-color: #f5f5f5;">小米電動打氣機</div>
+            <div class="desc1" style="border-bottom: #f5f5f5 solid 20px;">NT$ 1095</div>
+        </div>
+        <div class="gallery" style="background-color: #f5f5f5; border-top: orange solid 1px;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3221100074">
+            <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1647600303.72028110.png?width=160&height=160" width="200px">
+            </a>
+            <div class="desc" style="background-color: #f5f5f5;">Xiaomi 水離子吹風機 H500</div>
+            <div class="desc1" style="border-bottom: #f5f5f5 solid 20px;">NT$ 1395</div>
+        </div>
+        <div class="gallery" style="background-color: #f5f5f5; border-top: yellowgreen solid 1px;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3214500032">
+            <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1636538731.15176153.png?width=160&height=160" width="200px">
+            </a>
+            <div class="desc" style="background-color: #f5f5f5;">米家恆溫電水壺 1S</div>
+            <div class="desc1" style="border-bottom: #f5f5f5 solid 20px;">NT$ 895</div>
+        </div>
+        <div class="gallery" style="background-color: #f5f5f5; border-top: green solid 1px;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-monitor-q2-65/">
+            <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1636539002.71722742.png?width=160&height=160" width="200px">
+            </a>
+            <div class="desc" style="background-color: #f5f5f5;">Xiaomi 智慧攝影機 標準版 2K</div>
+            <div class="desc1" style="border-bottom: #f5f5f5 solid 20px;">NT$ 695</div>
+        </div>
+        <div class="gallery" style="background-color: #f5f5f5; border-top: blue solid 1px;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-monitor-q2-65/">
+            <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1593327726.88331847.png?width=160&height=160" width="200px">
+            </a>
+            <div class="desc" style="background-color: #f5f5f5;">小米便攜相片印表機</div>
+            <div class="desc1" style="border-bottom: #f5f5f5 solid 20px;">NT$ 1665</div>
+        </div>
+    </div>
+    
+    <div id="cc">
+        <h2>熱賣產品排行</h2>
+    </div>
+    <div id="cc">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/monitor65/">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1613445002.13879491.png?width=160&height=160" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米智慧顯示器 65型</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 20999</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3204200006">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1602579665.57575242.png?width=160&height=160" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米智慧攝影機 雲台版 2K Pro</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1345</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/mi-smart-air-fryer-3.5l/">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1633751777.51673296.png?width=160&height=160" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米智慧氣炸鍋 3.5L</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-smart-air-purifier-4/">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1654848497.27055227.png?width=160&height=160" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 空氣淨化器 4</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 4995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/mi-robot-vacuum-mop-2-ultra-set/">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1645529333.04166200.png?width=160&height=160" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 掃拖機器人 2 Ultra 集塵版</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 14995</div>
+        </div>
+    </div>
+
+    <div id="cc">
+        <h2>智慧科技與家庭</h2>
+    </div>
+    
+    <div id="cc">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/monitor65/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-65monitor-04.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3223700068">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1665460092.32378525.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 智慧顯示器 Q2 65 型</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 35999</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222500039">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656059374.69853800.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 智慧顯示器 A2 55型</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 19999</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222500040">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656061012.71284064.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 智慧顯示器 A2 43型</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$15,999</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3212000032">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1621479160.6511830.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米 27 型電腦螢幕</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$5,295</div>
+        </div>
+    </div>
+    
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/search_books">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-12-books.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3212800021">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1626346503.08587000.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米34型曲面螢幕</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 12995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3212800022">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1626346767.79016104.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米23.8型電腦螢幕1C</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 4295</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3220200046">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1642059129.29245338.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 27型 2K 電競螢幕</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 11995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222600026">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/pms_1657708914.39357176.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white; width: 170px;">XiaomiBook S 12.4”+ Keyboard+充電器 套裝</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 24755</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-truclean-w10ultra-wet-dry-vacuum/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-w10-ultra.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3223400011">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1661156019.98216795.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 無線洗地機 W10 Pro</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 15995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3223700138">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1664274071.83322732.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 掃拖機器人 S10</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 7995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222600020">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656657594.61783139.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 超輕量無線吸塵器</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 8995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3215000011">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1639474430.97678877.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 無線吸塵器 G11</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 8995</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-smart-air-purifier-4-pro/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-kongjing-4po.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3214500035">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1654848468.39241656.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 空氣淨化器 4 Lite</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 3495</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3195200010">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1577167989.67723522.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;width: 160px;">米家空氣淨化器濾芯 除甲醛增強版 S1</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 795</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3221600002">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1651198060.64381173.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 智慧無扇葉淨化風扇</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 7995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3214500033">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1636539002.71722742.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 空氣循環淨化器</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 11995</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-smart-band-7-pro/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-band-7pro.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3223700070">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1664274839.68139820.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 手環7 Pro</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222000024">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1653461542.8592748.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 手環7</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1195</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3214800047">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1638442508.23396290.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Redmi 手環 Pro</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3220900022">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646290380.15354139.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi Watch S1 Active</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 4495</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/redmi-buds-3-lite/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-rd-buds-3lite.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3220900017">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646290086.26076575.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi buds 3T Pro 降噪藍牙耳機</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 3195</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3220900019">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646293481.10538009.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi buds 3</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 2295</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3223100024">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1662088538.47691808.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Redmi Buds 4 Pro</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3213500002">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1631932870.08686913.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Redmi Buds 3</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 945</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3203400044">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-450.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3191600001">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1555664964.88468594.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家檯燈 Pro</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1795</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3204900017">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1608286965.72071325.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家螢幕掛燈</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3192800004">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1564892957.48138127.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家 LED 智慧檯燈 1S</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3201200025">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1584677598.85521573.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家 LED 智慧燈泡 Lite 彩光版</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 395</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-smart-blender/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-smart-liaoliji.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3194500016">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1572937053.34627034.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家調理機</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 895</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3223100023">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1659697005.56169523.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米電水壺 2</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 895</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3184900009">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1586769544.24994646.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家電磁爐</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1795</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3184600052">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1542382266.2081030.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">知吾煮湯鍋</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 595</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-water-ionic-hair-dryer-h500/">
+              <img src="https://i01.appmifile.com/webfile/globalweb/picture/20221125-142603.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3213300001">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1629102597.77461623.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米負離子吹風機 H300</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 795</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3220200050">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1644222708.82874534.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 聲波電動牙刷 T700</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3194800029">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1576495402.54211405.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家聲波電動牙刷 T500</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 995</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3201200026">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1584678166.38932100.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家電動刮鬍刀 S500</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 995</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-smart-camera-c300/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-c300.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3203900020">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1601031300.9566893.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米行車記錄器 2</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1795</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3193900025">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1573135477.55717128.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米無線車充</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 945</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222100018">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1653632375.35849769.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 智慧門鈴 3</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1895</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3202200060">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1625537103.92621257.jpg?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米液晶手寫板</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 495</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-karaoke-microphone/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-krok.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222500047">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656064170.12135221.jpg?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米戶外藍牙喇叭 (16W)</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1195</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3214100038">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1634114650.21895767.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米 WiFi 訊號延伸器 AC1200</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 695</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3220100013">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1644547196.42651278.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 路由器 AC1200</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 795</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3223300018">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1662533245.15999130.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 智慧彩光燈帶</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1495</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-massage-gun-mini/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-jinmoqiang-mini.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3193500035">
+              <img src="https://i01.appmifile.com/webfile/globalweb/picture/20220812-165923.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小衛質品泡沫洗手液（6瓶裝）</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 430</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3203600057">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1599703207.66844188.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家自動感應洗手機 單機版</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 295</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3192100001">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1558492333.69238139.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米體重計 2</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 395</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3200200016">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1581320980.97265101.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家電動起子機</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 895</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222600019">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-yanchangxian-set.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3221100072">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1649831706.06868839.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 智慧延長線 20W 快充版</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 695</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3212000033">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1624522653.84174289.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米 33W 快速充電器 1A1C版</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 325</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3215200044">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1640775810.16755993.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi GaN充電器 65W 1A1C 版</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 765</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222600034">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656667002.79797284.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 33W 充電器套裝</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 345</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-33w-power-bank-10000mah-pocket-edition-pro/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-22.5w.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3214400030">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1635923706.23036208.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 行動電源 20000 50W</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1095</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222800008">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657522001.80076862.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 直立風冷無線充電座 50W</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 1395</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3200700037">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1581391576.5046929.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">20000 小米行動電源 3 快充版</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 665</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3223700082">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1666602541.09888225.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 無線行動電源 10000</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 695</div>
+        </div>
+    </div>
+
+    <div id="dd">
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://www.mi.com/tw/product/xiaomi-smart-pet-fountain/">
+              <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-yinshuiji-pet.jpg?width=234&height=380" width="200px">
+            </a>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3221600003">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1650272609.92517629.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 電子溫濕度計 Pro</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 495</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3222500042">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656061856.49693908.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">Xiaomi 智慧寵物餵食器</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 2695</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3202100014">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1592464563.31172925.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">米家藍牙溫濕度計 2</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 135</div>
+        </div>
+        <div class="gallery" style="background-color: white;">
+            <a target="_blank" href="https://buy.mi.com/tw/item/3200800016">
+              <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1582015124.78257204.png?width=150&height=150" width="200px">
+            </a>
+            <div class="desc" style="background-color: white;">小米無線雙模滑鼠 靜音版</div>
+            <div class="desc1" style="border-bottom: white solid 20px;">NT$ 365</div>
+        </div>
+    </div>
+
+    <div id="ee"></div>
+    
+    <table>
+        <tr>
+            <th></th>
+            <th>產品與配件</th>
+            <th>幫助中心</th>
+            <th>客戶支援</th>
+            <th>關於小米</th>
+            <th>小米哪裡買</th>
+            <th colspan="2" style="font-size: 28px" >02-77255376</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>熱門商品分類</td>
+            <td>購物指南</td>
+            <td>服務條款及細則</td>
+            <td>瞭解小米</td>
+            <td>小米之家/小米專賣店</td>
+            <td colspan="2" >服務時間 09:00-18:00 含節假日</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>全部商品分類</td>
+            <td>付款幫助</td>
+            <td>維修站地點</td>
+            <td>管理團隊</td>
+            <td>官方授權通路</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>官方翻新機</td>
+            <td>PayPal 使用幫助</td>
+            <td>售後服務政策</td>
+            <td>隱私條款</td>
+            <td>聯絡我們</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>F 碼通道</td>
+            <td>分期付款</td>
+            <td>退貨須知</td>
+            <td>誠信規範​</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>常見 Q&A</td>
+            <td>配送規範</td>
+            <td>投資者關係</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>線上填寫折讓單入口</td>
+            <td>使用者指南</td>
+            <td>信任中心</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>退款資料補充</td>
+            <td>尊享服務</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div id="bo">
+        <br>
+        <br>
+        © 2010 - 2022 Xiaomi 版權所有 旗下網站： 小米商城 MIUI
+        <br>
+        <br>
+        <br>
+    </div>
+    
+</body>
+
+</html>
