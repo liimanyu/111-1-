@@ -6,4 +6,4 @@
 
 1.小米網頁（mi.html） 
 
-2.Google網頁（google.html）
+2.Google網頁（https://liimanyu.github.io/111-1-web/google.html）
