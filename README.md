@@ -4,6 +4,6 @@
 11146079 李曼鈺 / 11146082 范雅淇
 
 
-1.小米網頁（https://liimanyu.github.io/111-1-web/mi.html） 
+1.小米網頁（mi.html） 
 
-2.Google網頁（https://liimanyu.github.io/111-1-web/google.html）
+2.Google網頁（google.html）
